@@ -1,36 +1,49 @@
+/* RESET CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+/* BODY STYLING */
 body {
     background-color: #b91450;
 }
 
-.pink {
+
+/* COLOR STYLING */
+.purple {
     color: #c3366a;
 }
 
-.pink_border {
+.purple_border {
     border-color: #c3366a;
 }
 
+.bg_grey {
+    background-color: grey;
+}
+
+
+/* TABLE STYLING */
 .ticket_table table,
 .ticket_table th,
 .ticket_table td {
     border: none;
+    padding: 20px;
 }
 
 table {
-    border-top: 2px solid #000000; 
-    border-bottom: 2px solid #000000;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
-.bg_grey {
-    background-color: #808080;
-}
 
-.ticket_table th {
-    padding: 20px 20px 30px 20px;
+/* BUTTON STYLING */
+.ticket_button {
+    background-color: lightgrey;
+    color: #ba1f57;
+    font-weight: bold;
+    border: 1px solid darkgray;
 }

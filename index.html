@@ -14,17 +14,17 @@
         <div class="row ticket_form text-center bg-white rounded-4 mx-5 my-3 p-4">
             <div class="col-12 col-lg-4 px-5">
                 <!-- Input per il nome e cognome -->
-                <label for="name" class="form-label pink">Nome Cognome</label>
-                <input type="text" class="form-control pink_border" id="name" name="name">
+                <label for="name" class="form-label purple">Nome Cognome</label>
+                <input type="text" class="form-control purple_border" id="name" name="name">
             </div>
             <div class="col-12 col-lg-4 px-5">
                 <!-- Input per il numero di chilometri da percorrere -->
-                <label for="distance" class="form-label pink">Km da percorrere</label>
-                <input type="number" class="form-control pink_border" id="distance" name="distance">
+                <label for="distance" class="form-label purple">Km da percorrere</label>
+                <input type="number" class="form-control purple_border" id="distance" name="distance">
             </div>
             <div class="col-12 col-lg-4 px-5">
-                <label for="age" class="form-label pink">Fascia d'età</label>
-                <select id="age" class="form-control pink_border" name="age">
+                <label for="age" class="form-label purple">Fascia d'età</label>
+                <select id="age" class="form-control purple_border" name="age">
                     <option value="minorenne">Minorenne</option>
                     <option value="maggiorenne">Maggiorenne</option>
                     <option value="over65">Over 65</option>
@@ -32,8 +32,8 @@
             </div>
             <div class="col-12 mt-5">
                 <!-- Bottone per calcolare il prezzo del biglietto -->
-                <button type="button" class="btn btn-primary" onclick="price_calc()">Genera</button>
-                <button type="button" class="btn btn-primary" onclick="reset_form()">Annulla</button>
+                <button type="button" class="btn ticket_button" onclick="price_calc()">Genera</button>
+                <button type="button" class="btn ticket_button" onclick="reset_form()">Annulla</button>
             </div>
         </div>
         <!-- SEZIONE "IL TUO BIGLIETTO" -->
@@ -56,7 +56,7 @@
                         <td id="output_offer">&nbsp;</td>
                         <td id="output_carriage">&nbsp;</td>
                         <td id="output_cp">&nbsp;</td>
-                        <td id="output_crice">&nbsp;</td>
+                        <td id="output_price">&nbsp;</td>
                     </tr>
                 </tbody>
             </table>
