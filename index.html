@@ -13,9 +13,9 @@
         <h1 class="fw-bold text-center text-white mt-5">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
         <div class="row ticket_form text-center bg-white rounded-4 mx-5 my-3 p-4">
             <div class="col-12 col-lg-4 px-5">
-                <!-- Input per il numero di chilometri da percorrere -->
-                <label for="distance" class="form-label pink">Nome Cognome</label>
-                <input type="number" class="form-control pink_border" id="distance" name="distance">
+                <!-- Input per il nome e cognome -->
+                <label for="name" class="form-label pink">Nome Cognome</label>
+                <input type="text" class="form-control pink_border" id="name" name="name">
             </div>
             <div class="col-12 col-lg-4 px-5">
                 <!-- Input per il numero di chilometri da percorrere -->
@@ -32,8 +32,8 @@
             </div>
             <div class="col-12 mt-5">
                 <!-- Bottone per calcolare il prezzo del biglietto -->
-                <button type="submit" class="btn btn-primary" onclick="price_calc()">Genera</button>
-                <button type="submit" class="btn btn-primary" onclick="reset_form()">Annulla</button>
+                <button type="button" class="btn btn-primary" onclick="price_calc()">Genera</button>
+                <button type="button" class="btn btn-primary" onclick="reset_form()">Annulla</button>
             </div>
         </div>
         <!-- SEZIONE "IL TUO BIGLIETTO" -->
@@ -52,27 +52,16 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="bg_grey">&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
+                        <td class="bg_grey" id="output_name">&nbsp;</td>
+                        <td id="output_offer">&nbsp;</td>
+                        <td id="output_carriage">&nbsp;</td>
+                        <td id="output_cp">&nbsp;</td>
+                        <td id="output_crice">&nbsp;</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
     <!-- Collegamento al file JavaScript -->
     <script src="./js/script.js"></script>
 </body>
