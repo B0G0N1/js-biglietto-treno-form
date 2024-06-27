@@ -8,37 +8,32 @@
     <title>Biglietto del Treno</title>
 </head>
 <body>
-    <div class="container text-center">
-        <!-- RIGA FORM INSERIMENTO DATI -->
-        <div class="row">
-            <div class="col-12">
-                <h1>Calcolo Prezzo Biglietto</h1>
-            </div>
-            <div class="col-4">
-                <p>Nome e cognome</p>
+    <div class="container mt-4 text-center">
+        <!-- SEZIONE FORM INSERIMENTO DATI -->
+        <h1 class="fw-bold text-white">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <div class="row ticket_form bg-white rounded-4 mx-5 my-3 p-4">
+            <div class="col-4 px-5">
                 <!-- Input per il numero di chilometri da percorrere -->
-                <label for="distance">Numero di chilometri da percorrere:</label>
-                <input type="number" id="distance" name="distance">
+                <label for="distance" class="form-label reddish-pink">Nome Cognome</label>
+                <input type="number" class="form-control reddish-pink_border" id="distance" name="distance">
             </div>
-            <div class="col-4">
-                <p>Km da percorrere</p>
-                <!-- Input per l'età del passeggero -->
-                <label for="age">Età del passeggero:</label>
-                <input type="number" id="age" name="age">
+            <div class="col-4 px-5">
+                <!-- Input per il numero di chilometri da percorrere -->
+                <label for="distance" class="form-label reddish-pink">Km da percorrere</label>
+                <input type="number" class="form-control reddish-pink_border" id="distance" name="distance">
             </div>
-            <div class="col-4">
-                <p>Fascia d'età</p>
-                <label for="age">Fascia d'età</label>
-                <select id="age" name="age">
+            <div class="col-4 px-5">
+                <label for="age" class="form-label reddish-pink">Fascia d'età</label>
+                <select id="age" class="form-control reddish-pink_border" name="age">
                     <option value="minorenne">Minorenne</option>
                     <option value="maggiorenne">Maggiorenne</option>
                     <option value="over65">Over 65</option>
                 </select>
             </div>
-            <div class="col-12">
+            <div class="col-12 mt-5">
                 <!-- Bottone per calcolare il prezzo del biglietto -->
-                <button onclick="price_calc()">Genera</button>
-                <button onclick="reset_form()">Annulla</button>
+                <button type="submit" class="btn btn-primary" onclick="price_calc()">Genera</button>
+                <button type="submit" class="btn btn-primary" onclick="reset_form()">Annulla</button>
             </div>
         </div>
         <!-- RIGA STAMPA BIGLIETTO -->

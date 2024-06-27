@@ -2,5 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
+}
+
+body {
+    background-color: #b91450;
+}
+
+.reddish-pink {
+    color: #c3366a;
+}
+
+.reddish-pink_border {
+    border-color: #c3366a;
 }
