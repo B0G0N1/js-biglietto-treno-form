@@ -12,9 +12,10 @@ function price_calc() {
     let sconto = 0;
 
     // Applica lo sconto in base all'età
-    if (eta < 18) {
+    if (age < 18) {
         sconto = 0.2; // Sconto del 20% per i minorenni
-    } else if (eta > 65) {
+    }
+    else if (age > 65) {
         sconto = 0.4; // Sconto del 40% per gli over 65
     }
 

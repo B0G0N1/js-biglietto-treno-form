@@ -3,26 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Biglietto del Treno</title>
 </head>
 <body>
-    <!-- Titolo della pagina -->
-    <h1>Calcolo Prezzo Biglietto</h1>
-    <br>
+    <div class="container text-center">
+        <!-- RIGA FORM INSERIMENTO DATI -->
+        <div class="row">
+            <div class="col-12">
+                <h1>Calcolo Prezzo Biglietto</h1>
+            </div>
+            <div class="col-4">
+                <p>Nome e cognome</p>
+                <!-- Input per il numero di chilometri da percorrere -->
+                <label for="distance">Numero di chilometri da percorrere:</label>
+                <input type="number" id="distance" name="distance">
+            </div>
+            <div class="col-4">
+                <p>Km da percorrere</p>
+                <!-- Input per l'età del passeggero -->
+                <label for="age">Età del passeggero:</label>
+                <input type="number" id="age" name="age">
+            </div>
+            <div class="col-4">
+                <p>Fascia d'età</p>
+                <label for="age">Fascia d'età</label>
+                <select id="age" name="age">
+                    <option value="minorenne">Minorenne</option>
+                    <option value="maggiorenne">Maggiorenne</option>
+                    <option value="over65">Over 65</option>
+                </select>
+            </div>
+            <div class="col-12">
+                <!-- Bottone per calcolare il prezzo del biglietto -->
+                <button onclick="price_calc()">Genera</button>
+                <button onclick="reset_form()">Annulla</button>
+            </div>
+        </div>
+        <!-- RIGA STAMPA BIGLIETTO -->
+        <div class="row">
+            <h1>Calcolo Prezzo Biglietto</h1>            
+        </div>
+    </div>
 
-    <!-- Input per il numero di chilometri da percorrere -->
-    <label for="distance">Numero di chilometri da percorrere:</label>
-    <input type="number" id="distance" name="distance">
-    <br><br>
 
-    <!-- Input per l'età del passeggero -->
-    <label for="age">Età del passeggero:</label>
-    <input type="number" id="age" name="age">
-    <br><br>
 
-    <!-- Bottone per calcolare il prezzo del biglietto -->
-    <button onclick="price_calc()">Calcola Prezzo</button>
+
+
+
+
+
+
+
 
     <!-- Collegamento al file JavaScript -->
     <script src="./js/script.js"></script>
