@@ -16,3 +16,14 @@ body {
 .reddish-pink_border {
     border-color: #c3366a;
 }
+
+.ticket_table table,
+.ticket_table th,
+.ticket_table td {
+    border: none;
+}
+
+table {
+    border-top: 2px solid #000000; 
+    border-bottom: 2px solid #000000;
+}

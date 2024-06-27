@@ -8,21 +8,21 @@
     <title>Biglietto del Treno</title>
 </head>
 <body>
-    <div class="container mt-4 text-center">
+    <div class="container text-center">
         <!-- SEZIONE FORM INSERIMENTO DATI -->
-        <h1 class="fw-bold text-white">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <h1 class="fw-bold text-white mt-5">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
         <div class="row ticket_form bg-white rounded-4 mx-5 my-3 p-4">
-            <div class="col-4 px-5">
+            <div class="col-12 col-lg-4 px-5">
                 <!-- Input per il numero di chilometri da percorrere -->
                 <label for="distance" class="form-label reddish-pink">Nome Cognome</label>
                 <input type="number" class="form-control reddish-pink_border" id="distance" name="distance">
             </div>
-            <div class="col-4 px-5">
+            <div class="col-12 col-lg-4 px-5">
                 <!-- Input per il numero di chilometri da percorrere -->
                 <label for="distance" class="form-label reddish-pink">Km da percorrere</label>
                 <input type="number" class="form-control reddish-pink_border" id="distance" name="distance">
             </div>
-            <div class="col-4 px-5">
+            <div class="col-12 col-lg-4 px-5">
                 <label for="age" class="form-label reddish-pink">Fascia d'età</label>
                 <select id="age" class="form-control reddish-pink_border" name="age">
                     <option value="minorenne">Minorenne</option>
@@ -36,9 +36,28 @@
                 <button type="submit" class="btn btn-primary" onclick="reset_form()">Annulla</button>
             </div>
         </div>
-        <!-- RIGA STAMPA BIGLIETTO -->
-        <div class="row">
-            <h1>Calcolo Prezzo Biglietto</h1>            
+        <!-- SEZIONE "IL TUO BIGLIETTO" -->
+        <h1 class="fw-bold text-white mt-5">IL TUO BIGLIETTO</h1>
+        <div class="row ticket_form bg-white rounded-4 mx-5 my-3 p-4">
+            <table class="ticket_table table">
+                <thead>
+                    <tr>
+                        <th class="name-column" rowspan="2">NOME PASSEGGERO<br>Jon Snow</th>
+                        <th class="details-header">Offerta</th>
+                        <th class="details-header">Carrozza</th>
+                        <th class="details-header">Codice CP</th>
+                        <th class="details-header">Costo biglietto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="details-row">
+                        <td>Biglietto Standard</td>
+                        <td>5</td>
+                        <td>92911</td>
+                        <td>2.10€</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 
